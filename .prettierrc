@@ -9,6 +9,5 @@
   "arrowParens": "always",
   "endOfLine": "lf",
   "jsxSingleQuote": false,
-  "bracketSameLine": false,
-  "embeddedLanguageFormatting": "auto"
+  "bracketSameLine": false
 }
