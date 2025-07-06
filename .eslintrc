@@ -20,7 +20,8 @@
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": "warn",
-    "react/react-in-jsx-scope": "off" // Not needed in React 17+
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
   },
   "settings": {
     "react": {
