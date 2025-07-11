@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="blogs.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="logo"><a href="../LandingPage/landingPage.html" id="logo">Libertae</a></div>
+          <div class="nav_buttons">
+            <!-- <button id="Login">Login</button>
+            <button id="SignUp">SignUp</button> -->
+            <button id="About"><a href="../about-us/about-us.html" style="text-decoration: none; color: #363b71;">About</a></button>
+            <button id="Blogs"><a href="../BLOGS/blogs.html" style="text-decoration: none; color: #363b71;">Blogs</a></button>
+            <button id="Premium">Product</button>
+          </div>
+      </nav>
+        <h1 id="heading">
+            Blogs
+        </h1>
+        <h3 id="desc">
+           Know from our developers 
+        </h3>
+    </header>
+    <main>
+        <!-- Dropdown -->
+        <div class="dropdown">
+            <button class="dropdown-toggle" onclick="toggleDropdown()">All Topics ▾</button>
+            <ul class="dropdown-menu" id="dropdownMenu">
+                <li onclick="filterArticles('all')">All Topics</li>
+                <li onclick="filterArticles('customer')">Customer Stories</li>
+                <li onclick="filterArticles('experimentation')">Experimentation</li>
+                <li onclick="filterArticles('platform')">Platform</li>
+                <li onclick="filterArticles('growth')">Growth</li>
+                <li onclick="filterArticles('ai')">AI</li>
+            </ul>
+        </div>
+        
+        <!-- Article Cards -->
+        <div class="articles">
+            <div class="card" data-tags="ai platform" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-anna-nekrashevich-8533269.jpg" />
+                <div class="tags"><span>AI</span><span>PLATFORM</span></div>
+                <h3>UI Code Generation with OpenAI</h3>
+                <p>Generate site sections using AI.</p>
+            </div>
+            
+            <div class="card" data-tags="ai growth platform" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-anna-nekrashevich-8534384.jpg" />
+                <div class="tags"><span>AI</span><span>GROWTH</span><span>PLATFORM</span></div>
+                <h3>A/B Testing vs. MABs</h3>
+                <p>Key testing approach differences.</p>
+            </div>
+        
+            <div class="card" data-tags="customer" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-eva-bronzini-6956450.jpg" />
+                <div class="tags"><span>CUSTOMER STORIES</span></div>
+                <h3>User Experience Study</h3>
+                <p>Case study on engagement.</p>
+            </div>
+            <div class="card" data-tags="growth ai" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-n-voitkevich-8062366.jpg" />
+                <div class="tags"><span>GROWTH</span><span>AI</span></div>
+                <h3>AI for Market Growth</h3>
+                <p>Use AI to expand market reach.</p>
+            </div>
+            <div class="card" data-tags="platform experimentation" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-leticia-alvares-1805702-32922448.jpg" />
+                <div class="tags"><span>PLATFORM</span><span>EXPERIMENTATION</span></div>
+                <h3>Testing Infrastructure</h3>
+                <p>Scale experimentation efforts.</p>
+            </div>
+            <div class="card" data-tags="customer ai" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-n-voitkevich-5554650.jpg" />
+                <div class="tags"><span>CUSTOMER STORIES</span><span>AI</span></div>
+                <h3>AI in Support Outcomes</h3>
+                <p>Boosted CSAT scores by 25%.</p>
+            </div>
+            <div class="card" data-tags="growth" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-anna-nekrashevich-8533269.jpg" />
+                <div class="tags"><span>GROWTH</span></div>
+                <h3>Growth Loops</h3>
+                <p>Discover compounding effects.</p>
+            </div>
+            <div class="card" data-tags="platform" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-anna-nekrashevich-8534384.jpg" />
+                <div class="tags"><span>PLATFORM</span></div>
+                <h3>Platform Resilience</h3>
+                <p>Ensure uptime and scale.</p>
+            </div>
+            <div class="card" data-tags="experimentation" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-eva-bronzini-6956450.jpg" />
+                <div class="tags"><span>EXPERIMENTATION</span></div>
+                <h3>Rapid Prototyping</h3>
+                <p>Launch fast, test faster.</p>
+            </div>
+            <div class="card" data-tags="ai" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-n-voitkevich-8062366.jpg" />
+                <div class="tags"><span>AI</span></div>
+                <h3>AI Chat Assistants</h3>
+                <p>Enhance UX with smart replies.</p>
+            </div>
+            <div class="card" data-tags="customer experimentation" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-leticia-alvares-1805702-32922448.jpg" />
+                <div class="tags"><span>CUSTOMER STORIES</span><span>EXPERIMENTATION</span></div>
+                <h3>User-Led Experiments</h3>
+                <p>How users helped improve flow.</p>
+            </div>
+            <div class="card" data-tags="platform growth" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-n-voitkevich-5554650.jpg" />
+                <div class="tags"><span>PLATFORM</span><span>GROWTH</span></div>
+                <h3>Scalable Architecture</h3>
+                <p>Build once, scale infinitely.</p>
+            </div>
+            <div class="card" data-tags="customer growth" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-anna-nekrashevich-8533269.jpg" />
+                <div class="tags"><span>CUSTOMER STORIES</span><span>GROWTH</span></div>
+                <h3>Growth-Driven Redesign</h3>
+                <p>Real user gains from redesign.</p>
+            </div>
+            <div class="card" data-tags="ai experimentation" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-anna-nekrashevich-8534384.jpg" />
+                <div class="tags"><span>AI</span><span>EXPERIMENTATION</span></div>
+                <h3>Test AI Prompts</h3>
+                <p>Discover what works best.</p>
+            </div>
+            <div class="card" data-tags="platform ai" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-eva-bronzini-6956450.jpg" />
+                <div class="tags"><span>PLATFORM</span><span>AI</span></div>
+                <h3>AI-Powered Dashboards</h3>
+                <p>Build with less code and more insight.</p>
+            </div>
+            <div class="card" data-tags="growth experimentation" onclick="window.location.href='https://www.facebook.com/yourpage'">
+                <img src="./images2/pexels-n-voitkevich-8062366.jpg" />
+                <div class="tags"><span>GROWTH</span><span>EXPERIMENTATION</span></div>
+                <h3>Metrics That Matter</h3>
+                <p>Test what fuels your KPIs.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Libertae</h3>
+                <p>Empowering freelancers and clients to connect, collaborate, and grow.</p>
+            </div>
+    
+            <div class="footer-links">
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../about-us/about-us.html">About</a></li>
+                        <li><a href="../BLOGS/blogs.html">Blogs</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Product</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#"><img src="../LandingPage/image/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="../LandingPage/image/social.png" alt="Instagram" /></a>
+        <a href="#"><img src="../LandingPage/image/facebook.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="../LandingPage/image/twitter.png" alt="Twitter" /></a>
+    </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 Libertae. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="blogs.js"></script>
+</body>
+
+</html>
