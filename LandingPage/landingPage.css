@@ -13,6 +13,11 @@ body{
     z-index: -2;
 }
 
+.overlay {
+    position: absolute;
+    z-index: 0;
+}
+
 nav{
     display: flex;
     background-color: #B1B2FF;
@@ -25,12 +30,6 @@ nav{
     height: 100px;
 }
 
-
-
-.overlay {
-    position: absolute;
-    z-index: 0;
-}
 
 #logo{
     letter-spacing: 3px;

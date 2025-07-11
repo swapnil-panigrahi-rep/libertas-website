@@ -114,7 +114,10 @@ nav {
     background-color: #363b71;
     color: #EEF1FF;
 }
+
 .footer {
+  position: relative;
+  transform: translateY(400px);
   background: #e3dfff;
   color: #2c2c54;
   font-family: 'Segoe UI', sans-serif;
